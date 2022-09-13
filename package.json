@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Stormhead77/ZooLabJS#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.19.0",
     "eslint": "^8.23.1",
     "jest": "^29.0.3",
     "prettier": "2.7.1"
