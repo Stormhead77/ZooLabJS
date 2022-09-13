@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
   
 jobs:
-  build-and-deploy:
+  build:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
@@ -25,3 +25,5 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
             token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Prettier check
+        run: npm run prettier
