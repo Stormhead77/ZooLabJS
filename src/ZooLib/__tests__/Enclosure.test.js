@@ -31,7 +31,7 @@ describe("Enclosure", () => {
     enclosure.addAnimal(new Bison());
 
     expect(() => enclosure.addAnimal(new Elephant())).toThrowError(
-      "There is no available space"
+      "No available space"
     );
   });
 

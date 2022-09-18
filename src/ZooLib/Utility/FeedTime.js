@@ -1,6 +1,6 @@
 export default class FeedTime {
-  constructor(dateTime /*, zooKeeper*/) {
+  constructor(dateTime, zooKeeper) {
     this.dateTime = dateTime;
-    // this.zooKeeper = zooKeeper;
+    this.zooKeeper = zooKeeper;
   }
 }
