@@ -25,7 +25,7 @@ export default class Enclosure {
     if (sqFtLeft >= animal.requiredSpaceSqFt) {
       this.animals.push(animal);
     } else {
-      throw "There is no available space";
+      throw "No available space";
     }
   };
 }

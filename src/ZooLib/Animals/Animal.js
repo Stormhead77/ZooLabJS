@@ -23,4 +23,6 @@ export default class Animal {
       (friendly) => animal instanceof friendly
     );
   };
+
+  feed = () => {};
 }
