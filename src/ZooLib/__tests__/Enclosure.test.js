@@ -6,11 +6,11 @@ import Lion from "../Animals/Mammals/Lion";
 
 describe("Enclosure", () => {
   it("should be able to create", () => {
-    const enclosure = new Enclosure();
+    const enclosure = new Enclosure("a", 2000);
 
     // expect(enclosure.parentZoo).toEqual("");
-    expect(enclosure.name).toEqual("");
-    expect(enclosure.squareFeet).toEqual(0);
+    expect(enclosure.name).toEqual("a");
+    expect(enclosure.squareFeet).toEqual(2000);
     expect(enclosure.animals).toStrictEqual([]);
   });
 
