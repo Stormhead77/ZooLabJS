@@ -1,6 +1,7 @@
 import Enclosure from "./Enclosure";
 import ZooKeeper from "./Employees/ZooKeeper";
 import Veterinarian from "./Employees/Veterinarian";
+import HireValidatorProvider from "./Validators/HireValidatorProvider";
 
 export default class Zoo {
   constructor(location) {
@@ -67,5 +68,11 @@ export default class Zoo {
           .healAnimal(animal);
       });
     });
+  };
+
+  hireEmployee = (employee) => {
+    if (HireValidatorProvider.ProvideEmployee(employee, this)) {
+      this.employees.push(employee);
+    }
   };
 }
